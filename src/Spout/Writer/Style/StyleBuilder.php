@@ -146,6 +146,12 @@ class StyleBuilder
         return $this;
     }
 
+    public function setNumFmtId($id)
+    {
+        $this->style->setNumFmtId($id);
+        return $this;
+    }
+
     /**
      * Returns the configured style. The style is cached and can be reused.
      *

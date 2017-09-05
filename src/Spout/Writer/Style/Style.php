@@ -61,6 +61,8 @@ class Style
     /** @var bool Whether the wrap text property was set */
     protected $hasSetWrapText = false;
 
+    protected $numFmtId = 0;
+
     /**
      * @var Border
      */
@@ -323,6 +325,16 @@ class Style
     public function shouldApplyBackgroundColor()
     {
         return $this->hasSetBackgroundColor;
+    }
+
+    public function getNumFmtId()
+    {
+        return $this->numFmtId;
+    }
+
+    public function setNumFmtId($id)
+    {
+        $this->numFmtId = $id;
     }
 
     /**
